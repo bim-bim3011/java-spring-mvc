@@ -16,14 +16,6 @@
         <!-- <link rel="stylesheet" href="/css/demo.css"> -->
 </head>
 <body>
-    Hello from JSP
-    <h1>
-        ${khanhnd}
-        <br>
-        ${test2}
-    </h1>
-    <h2>
-        <button class="btn btn-success">Submit</button>
-    </h2>
+    <h1>Hello ${name}</h1>
 </body>
 </html>

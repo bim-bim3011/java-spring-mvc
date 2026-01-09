@@ -33,8 +33,9 @@ public class UserController {
     }
 
     @RequestMapping(value = "/admin/user/create1", method = RequestMethod.POST)
-    public String getCreateUser(Model mode, @ModelAttribute("newUser") User khanhnd) {
+    public String getCreateUser(Model model, @ModelAttribute("newUser") User khanhnd) {
         System.out.println(khanhnd);
+        model.addAttribute("name", khanhnd.toString());
         return "hello";
     }
 }
